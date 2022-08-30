@@ -46,6 +46,7 @@
             this.listViewEsami = new System.Windows.Forms.ListView();
             this.buttonRemove = new System.Windows.Forms.Button();
             this.buttonVediTutto = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dbColloquioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbColloquioDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -85,6 +86,7 @@
             // 
             // buttonCerca
             // 
+            this.buttonCerca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCerca.Location = new System.Drawing.Point(245, 29);
             this.buttonCerca.Name = "buttonCerca";
             this.buttonCerca.Size = new System.Drawing.Size(70, 23);
@@ -107,6 +109,7 @@
             // 
             // comboBoxRicerca
             // 
+            this.comboBoxRicerca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxRicerca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRicerca.FormattingEnabled = true;
             this.comboBoxRicerca.Items.AddRange(new object[] {
@@ -159,6 +162,7 @@
             // 
             // buttonAggiungi
             // 
+            this.buttonAggiungi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAggiungi.Location = new System.Drawing.Point(675, 167);
             this.buttonAggiungi.Name = "buttonAggiungi";
             this.buttonAggiungi.Size = new System.Drawing.Size(75, 23);
@@ -203,6 +207,7 @@
             // 
             // buttonRemove
             // 
+            this.buttonRemove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonRemove.Location = new System.Drawing.Point(675, 343);
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.Size = new System.Drawing.Size(75, 23);
@@ -213,6 +218,7 @@
             // 
             // buttonVediTutto
             // 
+            this.buttonVediTutto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonVediTutto.Location = new System.Drawing.Point(594, 62);
             this.buttonVediTutto.Name = "buttonVediTutto";
             this.buttonVediTutto.Size = new System.Drawing.Size(75, 23);
@@ -221,11 +227,23 @@
             this.buttonVediTutto.UseVisualStyleBackColor = true;
             this.buttonVediTutto.Click += new System.EventHandler(this.ButtonVediTutto_Click);
             // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Location = new System.Drawing.Point(675, 392);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 23);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Conferma Stampa";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonVediTutto);
             this.Controls.Add(this.buttonRemove);
             this.Controls.Add(this.listViewEsami);
@@ -269,6 +287,7 @@
         private System.Windows.Forms.ListView listViewEsami;
         private System.Windows.Forms.Button buttonRemove;
         private System.Windows.Forms.Button buttonVediTutto;
+        private System.Windows.Forms.Button button2;
     }
 }
 

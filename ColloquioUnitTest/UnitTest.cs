@@ -3,6 +3,7 @@ using Colloquio;
 using System.Windows.Forms;
 using System.Data;
 
+
 namespace ColloquioUnitTest
 {
     public class UnitTest
@@ -19,7 +20,7 @@ namespace ColloquioUnitTest
             }
         }
         [Fact]
-        public void AddItemToListBox_NewItem_True()         //add aitem from DataSet to ListBox
+        public void AddItemToListBox_NewItem_True()         //add item from DataSet to ListBox
         {
             ListBox listBox = new ListBox();
             DataSet ds = new DataSet();
@@ -68,6 +69,18 @@ namespace ColloquioUnitTest
             {
                 MessageBox.Show("Nessun esame selezionato");
             }
+        }
+        [Fact]
+        public void RemoveItemFromEsamiAggiunti()        //check if the item selected is removed
+        {
+            ListView listViewEsamiAggiunti = new ListView();
+            ListViewItem item = new ListViewItem();
+            item.SubItems[0].Text = "plusOne";
+            listViewEsamiAggiunti.Items.Add(item);      //add a new item and select it
+            listViewEsamiAggiunti.Items[0].Selected = true;
+            Assert.True(item.Selected == true);
+            LogicSearch.RemoveEsamiAggiunti(listViewEsamiAggiunti);     //deselect the item
+            Assert.True(listViewEsamiAggiunti.SelectedItems.Count == 0);
         }
     }
 }

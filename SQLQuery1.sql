@@ -1,3 +1,6 @@
-﻿SELECT E.[idEsame], E.[nomeEsame], E.[codiceMinisteriale], E.[codiceInterno], E.[descrizione] FROM[ambulatori] AS A INNER JOIN[partiCorpo] AS P ON A.[idParteCorpo] = P.[idParteCorpo] INNER JOIN[esami] AS E ON P.[idEsame] = E.[idEsame] WHERE E.[nomeEsame]
-LIKE '%rmn%' OR E.[codiceMinisteriale] LIKE '%rmn%' 
-OR  E.[codiceInterno] LIKE '%rmn%' OR  E.[descrizione] LIKE '%rmn%';
+﻿SELECT E.[idEsame], E.[nomeEsame], E.[codiceMinisteriale], E.[codiceInterno], E.[descrizione] 
+                    FROM[ambulatori] AS A 
+                    INNER JOIN[ambulatoriPartiCorpo] AS AP ON AP.[idAmbulatorio] = A.[idAmbulatorio] 
+                    INNER JOIN[partiCorpo] AS P ON AP.[idParteCorpo] = P.[idParteCorpo] 
+                    INNER JOIN[esami] AS E ON P.[idEsame] = E.[idEsame]
+                    WHERE AP.idAmbulatorio = 0 AND AP.idParteCorpo = 1;

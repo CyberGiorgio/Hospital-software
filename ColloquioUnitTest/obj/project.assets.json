@@ -51,10 +51,14 @@
       "xunit.abstractions/2.0.3": {
         "type": "package",
         "compile": {
-          "lib/net35/xunit.abstractions.dll": {}
+          "lib/net35/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net35/xunit.abstractions.dll": {}
+          "lib/net35/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "xunit.analyzers/0.10.0": {
@@ -63,10 +67,14 @@
       "xunit.assert/2.4.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/xunit.assert.dll": {}
+          "lib/netstandard1.1/xunit.assert.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.1/xunit.assert.dll": {}
+          "lib/netstandard1.1/xunit.assert.dll": {
+            "related": ".xml"
+          }
         }
       },
       "xunit.core/2.4.1": {
@@ -90,10 +98,14 @@
           "xunit.abstractions": "2.0.3"
         },
         "compile": {
-          "lib/net452/xunit.core.dll": {}
+          "lib/net452/xunit.core.dll": {
+            "related": ".dll.tdnet;.xml"
+          }
         },
         "runtime": {
-          "lib/net452/xunit.core.dll": {}
+          "lib/net452/xunit.core.dll": {
+            "related": ".dll.tdnet;.xml"
+          }
         }
       },
       "xunit.extensibility.execution/2.4.1": {
@@ -102,10 +114,14 @@
           "xunit.extensibility.core": "[2.4.1]"
         },
         "compile": {
-          "lib/net452/xunit.execution.desktop.dll": {}
+          "lib/net452/xunit.execution.desktop.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net452/xunit.execution.desktop.dll": {}
+          "lib/net452/xunit.execution.desktop.dll": {
+            "related": ".xml"
+          }
         }
       },
       "xunit.runner.visualstudio/2.4.3": {
@@ -436,11 +452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\white\\Documents\\GitHub\\Colloquio\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
       "projectName": "ColloquioUnitTest",
-      "projectPath": "C:\\Users\\white\\Documents\\GitHub\\Colloquio\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
+      "projectPath": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
       "packagesPath": "C:\\Users\\white\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\white\\Documents\\GitHub\\Colloquio\\ColloquioUnitTest\\obj\\",
+      "outputPath": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\white\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -457,8 +473,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "C:\\Users\\white\\Documents\\GitHub\\Colloquio\\Colloquio\\Colloquio.csproj": {
-              "projectPath": "C:\\Users\\white\\Documents\\GitHub\\Colloquio\\Colloquio\\Colloquio.csproj"
+            "C:\\Users\\white\\source\\repos\\HospitalSoftware\\Colloquio\\Colloquio.csproj": {
+              "projectPath": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\Colloquio\\Colloquio.csproj"
             }
           }
         }
@@ -494,7 +510,7 @@
             "version": "[2.4.3, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

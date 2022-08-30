@@ -47,7 +47,7 @@ namespace Colloquio
         }
         private void OnLoadData(object sender, EventArgs e)     //onload function executed (connection to database and initialise data)
         {
-            LogicSearch.DbConnect();
+           DbConnection.DbConnect();
 
             LogicSearch.LoadColumnEsami(listViewEsami);         //load grid columns Esami listView
             LogicSearch.LoadColumnEsami(listViewEsamiAggiunti);
@@ -84,12 +84,30 @@ namespace Colloquio
         {
             if (LogicSearch.GetAbmulatorioANDPartiCorpoSelected(listBoxAmbulatori,listBoxPartiCorpo).Item1 >= 0 && LogicSearch.GetAbmulatorioANDPartiCorpoSelected(listBoxAmbulatori, listBoxPartiCorpo).Item2 >= 0)
             {
-                LogicSearch.SearchByIndexes(listBoxAmbulatori, listBoxPartiCorpo, listBoxAmbulatori.SelectedIndex,listBoxPartiCorpo.SelectedIndex,listViewEsami);
+                LogicSearch.SearchByIndexes(listBoxAmbulatori.SelectedIndex,listBoxPartiCorpo.SelectedIndex,listViewEsami);
             }
         }
         private void ButtonVediTutto_Click(object sender, EventArgs e)      //show all Esami
         {
             LogicSearch.SearchAll(listViewEsami, listBoxAmbulatori,listBoxPartiCorpo);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Print();
+        }
+
+        private void Print()
+        {
+            if(listViewEsamiAggiunti.Items.Count == 0)
+            {
+                MessageBox.Show("Nessuna lista da stampare");
+            }
+            else
+            {
+                MessageBox.Show("File JSON stampato");
+            }
+            StaticClasses.JSONFile.Serialize(listViewEsamiAggiunti);
         }
     }
 }

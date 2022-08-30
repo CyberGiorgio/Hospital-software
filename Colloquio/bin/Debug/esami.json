@@ -1,0 +1,16 @@
+[
+  {
+    "NomeEsame": "RMN cranio",
+    "CodiceMinisteriale": "s34t76",
+    "CodiceInterno": "gffdh65",
+    "Descrizione": "esame testa",
+    "LocalDate": "2022-08-30T18:42:31.5938481+02:00"
+  },
+  {
+    "NomeEsame": "Eco Addome",
+    "CodiceMinisteriale": "dsfgds4",
+    "CodiceInterno": "dfgs34",
+    "Descrizione": "esame addominale",
+    "LocalDate": "2022-08-30T18:42:31.5948493+02:00"
+  }
+]
