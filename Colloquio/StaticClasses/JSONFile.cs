@@ -1,14 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Colloquio.StaticClasses.JSONFile;
 
 namespace Colloquio.StaticClasses
 {
@@ -20,7 +14,7 @@ namespace Colloquio.StaticClasses
             today.DateTime = DateTime.Today.ToString("dd-MM-yyyy");
             today.Esami = new List<Esame>();
             List<Esame> listEsami = new List<Esame>();
-            for (int i = 0; i < listViewEsamiAggiunti.Items.Count; i++)
+            for (int i = 0; i < listViewEsamiAggiunti.Items.Count; i++)     //create a list of esami
             {
                     var esame = new Esame()
                     {
@@ -38,9 +32,9 @@ namespace Colloquio.StaticClasses
     }
     public class TodayDate
     {
-        string dateTime;
-        List<Esame> esami;
-        public string DateTime { get => dateTime; set => dateTime = value; }
+        private string dateTime;        //date and list of exams
+        private List<Esame> esami;
+        public string DateTime { get => dateTime; set => dateTime = value; }        //encapsulation
         public List<Esame> Esami { get => esami; set => esami = value; }
     }
     public class Esame

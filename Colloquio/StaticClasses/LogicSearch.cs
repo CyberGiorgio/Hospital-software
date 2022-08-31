@@ -2,7 +2,6 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace Colloquio
@@ -283,6 +282,18 @@ namespace Colloquio
             {
                 MessageBox.Show("Nessun esame selezionato");
             }
+        }
+        public static void Print(ListView listViewEsamiAggiunti)        //print esami json file
+        {
+            if (listViewEsamiAggiunti.Items.Count == 0)
+            {
+                MessageBox.Show("Nessuna lista da stampare");
+            }
+            else
+            {
+                MessageBox.Show("File JSON stampato");
+            }
+            StaticClasses.JSONFile.Serialize(listViewEsamiAggiunti);
         }
     }
 }
