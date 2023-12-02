@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\ColloquioUnitTest.csproj": {}
+    "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\ColloquioUnitTest\\ColloquioUnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\ColloquioUnitTest.csproj": {
+    "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\ColloquioUnitTest\\ColloquioUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
         "projectName": "ColloquioUnitTest",
-        "projectPath": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
+        "projectPath": "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\ColloquioUnitTest\\ColloquioUnitTest.csproj",
         "packagesPath": "C:\\Users\\white\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\ColloquioUnitTest\\obj\\",
+        "outputPath": "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\ColloquioUnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\white\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "C:\\Users\\white\\source\\repos\\HospitalSoftware\\Colloquio\\Colloquio.csproj": {
-                "projectPath": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\Colloquio\\Colloquio.csproj"
+              "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\Colloquio\\Colloquio.csproj": {
+                "projectPath": "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\Colloquio\\Colloquio.csproj"
               }
             }
           }
@@ -69,11 +69,11 @@
         }
       }
     },
-    "C:\\Users\\white\\source\\repos\\HospitalSoftware\\Colloquio\\Colloquio.csproj": {
+    "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\Colloquio\\Colloquio.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\Colloquio\\Colloquio.csproj",
+        "projectUniqueName": "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\Colloquio\\Colloquio.csproj",
         "projectName": "Colloquio",
-        "projectPath": "C:\\Users\\white\\source\\repos\\HospitalSoftware\\Colloquio\\Colloquio.csproj",
+        "projectPath": "C:\\Users\\white\\Documents\\GitHub\\Hospital-software\\Colloquio\\Colloquio.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
